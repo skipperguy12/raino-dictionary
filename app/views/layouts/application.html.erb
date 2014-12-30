@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Raino Dictionary</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="container">
+    <h1>
+      The free <a href="github.com/rainoboy97">Raino</a> dictionary
+    </h1>
+<%= yield %>
+<br  />
+<br  />
+<a href="github.com/skipperguy12">Made by @skipperguy12</a>
+</div>
+</body>
+</html>
