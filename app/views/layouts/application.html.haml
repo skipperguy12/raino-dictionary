@@ -1,0 +1,26 @@
+!!!
+%html
+  %head
+    %title Raino Dictionary
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    .container
+      .row
+        .col-xs-4.col-centered.col-lg-2
+          %a.thumbnail{:href => "http://www.github.com/rainoboy97"}
+            %img.img-responsive.center-block{:alt => "...", :src => "#{image_path "rainoboy97-avatar.png"}"}
+      %h1
+        The free Raino dictionary
+      %br
+      = yield
+      %br
+      %br
+      %ul.nav.nav-pills.pull-right
+        %li
+          %a{:href => "http://github.com/skipperguy12"} Made by @skipperguy12
+        %li
+          %a{:href => "http://github.com/skipperguy12/raino-dictionary"}
+            %i.fa.fa-github-alt
+            Open source
